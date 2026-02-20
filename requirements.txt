@@ -1,0 +1,13 @@
+# Pinned-ish minimal working set
+pdfplumber>=0.11.0
+PyPDF2>=3.0.0
+pytesseract>=0.3.10
+pillow>=10.0.0
+transformers>=4.40.0
+# Install torch according to your platform instructions; leaving unpinned here
+# so pip can fetch the correct MPS-enabled wheel on macOS
+torch
+# Optional but recommended
+accelerate>=0.27.0
+# CLI / UX
+tqdm>=4.66.0
