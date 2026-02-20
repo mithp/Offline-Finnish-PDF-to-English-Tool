@@ -1,0 +1,16 @@
+Example code and files to test the tool:
+
+python translate_mypdf.py Suomi_wiki.pdf
+
+Extracting text from PDF...
+Using native text extraction...
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Splitting into sentences...
+Found 1386 sentences.
+Initializing translator...
+Loading translation model: Helsinki-NLP/opus-mt-fi-en
+Using GPU (MPS).
+Loading weights: 100%|████████████████████████████████████████| 258/258 [00:00<00:00, 13541.86it/s, Materializing param=model.shared.weight]
+Translating...
+Writing output → translation.txt
+Done!
