@@ -54,3 +54,21 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+```
+
+📜 Code Overview
+The main steps:
+1.	is_scanned_pdf() — detect digital vs. scanned
+2.	extract_text_native() — extract digital text
+3.	extract_text_ocr() — run Tesseract OCR on pages
+4.	split_sentences() — simple Finnish segmentation
+5.	MarianTranslator — loads MarianMT + MPS device
+6.	translate_batch() — batch GPU accelerated translation
+7.	Writes English text file
+
+
+🧩 Known Limitations
+•	OCR accuracy depends on PDF quality.
+•	Sentence splitter is rule based; complex Finnish grammar may need spaCy or HF tokenizers.
+•	Very long PDFs may require batching or chunking beyond sentence-level translation.
+
